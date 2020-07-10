@@ -25,7 +25,7 @@ async function getImgUrl(file){
 		let bitmap = fs.readFileSync(file)
 		let base64Img = Buffer.from(bitmap).toString('base64')
 		let timestamp = moment().format('YYYYMMDDHHmmss')+'.jpg'
-		let imageUrl = 'https://api.github.com/repos/'+repo+'/contents/'+timestamp
+		let imageUrl = 'https://api.github.com/repos/'+repo+'/contents/'+'img/'+timestamp
 		let body = {
 			'branch': 'master',
 			'message': 'upload image',
@@ -39,9 +39,18 @@ async function getImgUrl(file){
 			}
 		})
 		imgUrl = upImgResp.data['content']['download_url']
+
+		// https://raw.githubusercontent.com/qqlcx5/figure-bed/master/img/20200710225424.jpg
+		// https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed/img/20200710225424.jpg
+		// https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.0/img/20200710230042.jpg
+		// https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed/blob/1.0/img/20200708131448.jpg
+		
 		if (imgUrl) {
-			log.info('success upload a pic to: '+imgUrl)
-			return imgUrl
+			log.info('success upload a pic to: '+ imgUrl)
+			const replaceCDN = imgUrl.replace('raw.githubusercontent.com','cdn.jsdelivr.net/gh')
+			const rmMaster = replaceCDN.replace('/master','@1.0')
+			log.info('success upload a rmMaster: '+ rmMaster)
+			return rmMaster
 		} else {
 			throw 'no img url '
 		}
