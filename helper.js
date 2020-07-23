@@ -48,7 +48,7 @@ async function getImgUrl(file){
 		if (imgUrl) {
 			log.info('success upload a pic to: '+ imgUrl)
 			const replaceCDN = imgUrl.replace('raw.githubusercontent.com','cdn.jsdelivr.net/gh')
-			const rmMaster = replaceCDN.replace('/master','@1.0')
+			const rmMaster = replaceCDN.replace('/master','@1.2')
 			log.info('success upload a rmMaster: '+ rmMaster)
 			return rmMaster
 		} else {

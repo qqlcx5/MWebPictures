@@ -10,5 +10,8 @@
     "formidable": "^1.1.1",
     "log4js": "^1.1.1",
     "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "ndb": "^1.1.5"
   }
 }
