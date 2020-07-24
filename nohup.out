@@ -1,0 +1,72 @@
+[32m[2020-07-25 00:22:23.933] [INFO] GithubPicBed - [39mapp run at 9000
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Object.<anonymous> (/Users/another/Documents/PicMWeb/index.js:83:4)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1328:8)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+[32m[2020-07-25 00:23:57.062] [INFO] GithubPicBed - [39mapp run at 9000
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Object.<anonymous> (/Users/another/Documents/PicMWeb/index.js:83:4)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1328:8)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+[32m[2020-07-25 00:26:10.141] [INFO] GithubPicBed - [39mapp run at 9000
+[31m[2020-07-25 00:26:17.576] [ERROR] GithubPicBed - [39mupload failed with error: Error: connect ECONNREFUSED 13.250.168.23:443
+(node:13842) UnhandledPromiseRejectionWarning: no img url 
+(node:13842) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+(node:13842) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[32m[2020-07-25 00:28:26.093] [INFO] GithubPicBed - [39mapp run at 9000
+[32m[2020-07-25 00:28:45.052] [INFO] GithubPicBed - [39msuccess upload a pic to: https://raw.githubusercontent.com/qqlcx5/figure-bed/master/img/20200725002842.jpg
+[32m[2020-07-25 00:28:45.053] [INFO] GithubPicBed - [39msuccess upload a rmMaster: https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.2/img/20200725002842.jpg
+[32m[2020-07-25 00:28:48.084] [INFO] GithubPicBed - [39msuccess upload a pic to: https://raw.githubusercontent.com/qqlcx5/figure-bed/master/img/20200725002845.jpg
+[32m[2020-07-25 00:28:48.084] [INFO] GithubPicBed - [39msuccess upload a rmMaster: https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.2/img/20200725002845.jpg
+[32m[2020-07-25 00:28:51.523] [INFO] GithubPicBed - [39msuccess upload a pic to: https://raw.githubusercontent.com/qqlcx5/figure-bed/master/img/20200725002848.jpg
+[32m[2020-07-25 00:28:51.523] [INFO] GithubPicBed - [39msuccess upload a rmMaster: https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.2/img/20200725002848.jpg
+[32m[2020-07-25 00:28:54.698] [INFO] GithubPicBed - [39msuccess upload a pic to: https://raw.githubusercontent.com/qqlcx5/figure-bed/master/img/20200725002851.jpg
+[32m[2020-07-25 00:28:54.698] [INFO] GithubPicBed - [39msuccess upload a rmMaster: https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.2/img/20200725002851.jpg
+[32m[2020-07-25 00:28:58.675] [INFO] GithubPicBed - [39msuccess upload a pic to: https://raw.githubusercontent.com/qqlcx5/figure-bed/master/img/20200725002854.jpg
+[32m[2020-07-25 00:28:58.676] [INFO] GithubPicBed - [39msuccess upload a rmMaster: https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.2/img/20200725002854.jpg
+[32m[2020-07-25 00:29:03.912] [INFO] GithubPicBed - [39msuccess upload a pic to: https://raw.githubusercontent.com/qqlcx5/figure-bed/master/img/20200725002858.jpg
+[32m[2020-07-25 00:29:03.912] [INFO] GithubPicBed - [39msuccess upload a rmMaster: https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.2/img/20200725002858.jpg
+[32m[2020-07-25 00:29:06.676] [INFO] GithubPicBed - [39msuccess upload a pic to: https://raw.githubusercontent.com/qqlcx5/figure-bed/master/img/20200725002903.jpg
+[32m[2020-07-25 00:29:06.678] [INFO] GithubPicBed - [39msuccess upload a rmMaster: https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.2/img/20200725002903.jpg
+[32m[2020-07-25 00:29:09.751] [INFO] GithubPicBed - [39msuccess upload a pic to: https://raw.githubusercontent.com/qqlcx5/figure-bed/master/img/20200725002906.jpg
+[32m[2020-07-25 00:29:09.751] [INFO] GithubPicBed - [39msuccess upload a rmMaster: https://cdn.jsdelivr.net/gh/qqlcx5/figure-bed@1.2/img/20200725002906.jpg
